@@ -1,0 +1,76 @@
+### products index
+GET http://localhost:3000/products.json
+
+### product read/show
+GET http://localhost:3000/products/2.json
+
+### product create
+POST http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1MzM2MjJ9.5cOISdCqPEei4acUnCSeqqu8-NBThEj0FNE0m8F-DXM
+content-type: application/json
+
+{
+  "name": "Reverend Guitar",
+  "price": 1500,
+  "description": "plays the twangy stuff",
+  "images": [
+    "https://www.yournextguitar.com/wp-content/uploads/2020/04/Reverend-Jetstream.jpg",
+    "https://www.premierguitar.com/media-library/image.png?id=27580034&width=744&quality=80"
+  ],
+  "supplier_id": 4,
+  "quantity": 5
+}
+
+
+### product update
+PATCH http://localhost:3000/products/3
+Authorization: Bearer 
+content-type: application/json
+
+{
+  
+}
+
+### product delete
+DELETE http://localhost:3000/products/8
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "chauncey",
+  "email": "chauncey@email.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "jeff@email.com",
+  "password": "password"
+}
+
+
+### order create
+POST http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1MzM5MDh9.zaQZTJTbzs8nFMLKN0D2ioP55qylL2rwTq-9j4NvthI
+content-type: application/json
+
+{
+  "product_id": 5,
+  "quantity": 2
+}
+
+
+### order update
+GET http://localhost:3000/orders/2.json
+Authorization: Bearer 
+
+### order index
+GET http://localhost:3000/orders.json
+Authorization: Bearer
