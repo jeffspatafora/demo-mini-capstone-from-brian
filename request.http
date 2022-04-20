@@ -6,11 +6,11 @@ GET http://localhost:3000/products/2.json
 
 ### product create
 POST http://localhost:3000/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDk4NzEwNDl9.r4OWBT_AkAnG_2CGyKQVBhwHZ81g0nMuwJ-i-8_duCE
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDk4NzU5Njd9.yQRJR_DPpTZp-zv1jwAMDpAgKIs9STwWt679veGHvBk
 content-type: application/json
 
 {
-  "name": "test",
+  "name": "test2",
   "price": 2000,
   "description": "play the bass notes",
   "images": [
@@ -39,8 +39,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "chauncey",
-  "email": "chauncey@email.com",
+  "name": "petey",
+  "email": "petey@email.com",
   "password": "password",
   "password_confirmation": "password"
 }
